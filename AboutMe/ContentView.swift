@@ -13,21 +13,19 @@ struct ContentView: View {
             Color(.systemGray2)
                 .ignoresSafeArea()
             VStack(alignment: .center) {
-                VStack(spacing: 20) {
                     Image("catHat")
                         .resizable()
-                        .frame(width: 175)
+                        .frame(width: 175, height: 150)
                         .aspectRatio(contentMode: .fit)
                         .clipShape(Circle())
-                        
-                }
+                Text("Krisha Agarwal")
+                    .font(.title)
+                    .fontWeight(.bold)
+                Spacer()
                 //                Image("catHat")
                 //                    .resizable()
                 //                    .aspectRatio(contentMode: .fit)
                 //                    .clipShape(<#T##shape: Shape##Shape#>)
-                Text("Krisha Agarwal")
-                    .font(.title)
-                    .fontWeight(.bold)
             }
             .frame(width: 350)
             .padding()
